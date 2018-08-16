@@ -24,6 +24,7 @@ description: D for Design, E for efficiency and X for Experience
 navbar-links:
   LightDays:
     - Introduction: "LightDays/Introduction"
+  Tags: "tags"
   About Me: "aboutme"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
