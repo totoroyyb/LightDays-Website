@@ -21,7 +21,7 @@ title: 'Tag Index'
         &nbsp;{{- tag -}}&nbsp;({{site.tags[tag].size}})
     </h2>
     <div class="post-list">
-        {%- for post in site.tags[tag] -%}
+        {%- for post in site.tags[test] -%}
             <div class="tag-entry">
                 <a href="{{- site.url -}}{{- post.url -}}">{{- post.title -}}</a>
                 <div class="entry-date">
