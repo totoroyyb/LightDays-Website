@@ -23,8 +23,8 @@ description: D for Design, E for efficiency and X for Experience
 # List of links in the navigation bar
 navbar-links:
   LightDays:
-    - Introduction: "_pages/LightDays/Introduction"
-    - Privacy Policy: "_pages/LightDays/PrivacyPolicy"
+    - Introduction: "LightDays/Introduction"
+    - Privacy Policy: "LightDays/PrivacyPolicy"
     - Update Log: "tags/#LightDaysLogs" 
   Tags: "tags"
   About: "about"
