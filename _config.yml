@@ -27,7 +27,7 @@ navbar-links:
     - Privacy Policy: "_pages/LightDays/Privacy-Policy"
     - Update Log: "tags/#LightDaysLogs" 
   Tags: "tags"
-  About Me: "about"
+  About: "about"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
