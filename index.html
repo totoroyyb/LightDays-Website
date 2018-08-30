@@ -8,9 +8,6 @@ use-site-title: true
 <html lang="{{ site.lang }}">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="{% t site.description %}"/>
-  <meta name="keywords" content="{% t site.keywords %}"/>
-  <title>{% t site.name %} - {% t site.tagline %}</title>
 </head>
 
 <body>
@@ -79,5 +76,18 @@ use-site-title: true
   {% endif %}
 </ul>
 {% endif %}
+
+<!-- <footer>
+  <a class="active" href="#">{{ site.languageNames[site.lang] }}</a>
+  {% for lang in site.languageNames %}
+  {% if lang[0] == site.lang %} {% continue %} {% endif %}
+  {% if page.namespace %}
+  <a href="{% tl {{ page.namespace }} {{ lang[0] }} %}">{{ lang[1] }}</a>
+  {% else %}
+  <a href="{{ site.baseurl_root }}/{{ lang[0] }}/">{{ lang[1] }}</a>
+  {% endif %}
+  {% endfor %}
+</footer> -->
+
 </body>
 </html>
