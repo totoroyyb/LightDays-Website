@@ -1,5 +1,8 @@
 # --- General options --- #
 
+languages: ["en", "zh"]
+exclude_from_localizations: ["javascript", "images", "css"]
+
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
@@ -25,7 +28,7 @@ navbar-links:
   LightDays:
     - Introduction: "lightdays"
     - Privacy Policy: "lightdays/privacy"
-    - Update Log: "tags/#LightDaysLogs" 
+    - Update Log: "tags/#LightDaysLogs"
   Tags: "tags"
   About: "about"
   # Resources:
