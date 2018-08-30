@@ -223,6 +223,7 @@ DEPENDENCIES
   github-pages (= 163)
   jekyll-multiple-languages-plugin
   jekyll-paginate
+  tzinfo-data
 
 BUNDLED WITH
    1.16.4
