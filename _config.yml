@@ -26,8 +26,8 @@ description: D for Design, E for efficiency and X for Experience
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
-navbar-links:
-  en: 
+en:
+  navbar-links: 
     LightDays:
       - Introduction: "lightdays"
       - Privacy Policy: "lightdays/privacy"
@@ -35,7 +35,8 @@ navbar-links:
     Tags: "tags"
     About: "about"
 
-  zh:
+zh:
+  navbar-links:
     轻时光:
       - 介绍: "lightdays" 
       - 隐私政策: "lightdays/privacy"
