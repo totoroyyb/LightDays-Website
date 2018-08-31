@@ -1,6 +1,6 @@
 # --- General options --- #
 
-languages: ["en", "zh_CN"]
+languages: ["en", "zh"]
 default_lang: "en"
 exclude_from_localizations: ["javascript", "images", "css"]
 parallel_localization: true

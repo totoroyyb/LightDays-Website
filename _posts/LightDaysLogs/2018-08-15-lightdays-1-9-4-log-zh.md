@@ -1,8 +1,7 @@
 ---
 layout: post
-lang: zh_CN
+lang: zh
 title: 轻时光 1.9.4 更新日志
-permalink: /lightdays-1-9-4/
 tags: [LightDaysLogs]
 ---
 
