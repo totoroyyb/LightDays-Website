@@ -1,14 +1,10 @@
 ---
 layout: post
+lang: zh_CN
 title: LightDays 1.9.4 Update Log
+permalink: /lightdays-1-9-4-log/
 tags: [LightDaysLogs]
 ---
-
-## English
-
-* **Fixed** Loading customized background image incorrectly.
-
-
 
 ## 简体中文
 

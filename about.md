@@ -1,6 +1,6 @@
 ---
 layout: page
-title: global.about
+title: About
 subtitle: Modern age with modern apps!
 ---
 
