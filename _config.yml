@@ -27,12 +27,21 @@ description: D for Design, E for efficiency and X for Experience
 
 # List of links in the navigation bar
 navbar-links:
-  LightDays:
-    - Introduction: "lightdays"
-    - Privacy Policy: "lightdays/privacy"
-    - Update Log: "tags/#LightDaysLogs"
-  Tags: "tags"
-  About: "about"
+  en: 
+    LightDays:
+      - Introduction: "lightdays"
+      - Privacy Policy: "lightdays/privacy"
+      - Update Log: "tags/#LightDaysLogs"
+    Tags: "tags"
+    About: "about"
+
+  zh:
+    轻时光:
+      - 介绍: "lightdays" 
+      - 隐私政策: "lightdays/privacy"
+      - 更新日志: "tags/#LightDaysLogs"
+    标签: "tags"
+    关于: "about"
   # Resources:
   #   - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
   #   - Learn markdown: "http://www.markdowntutorial.com/"
