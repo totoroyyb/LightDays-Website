@@ -23,6 +23,13 @@
             </li>
           {%- endfor -%}
         </ul>
+
+      <p>
+        {% for tongue in site.languages %}
+        <a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
+          {% endfor %}
+      </p>
+      
       <p class="copyright text-muted">
       {{ site.author.name }}
       &nbsp;&bull;&nbsp;
@@ -42,8 +49,12 @@
       </p>
           <!-- Please don't remove this, keep my open source work credited :) -->
     <p class="theme-by text-muted">
-      Theme by
+      Theme powered by
       <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+
+    <p class="theme-by text-muted">
+      Content edited by TotoroQ
     </p>
       </div>
     </div>
