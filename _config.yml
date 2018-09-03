@@ -1,7 +1,7 @@
 # --- General options --- #
 
-languages: ["English", "简体中文"]
-default_lang: "English"
+languages: ["en", "zh"]
+default_lang: "en"
 exclude_from_localizations: ["javascript", "images", "css"]
 parallel_localization: true
 
