@@ -1,7 +1,9 @@
 ---
 layout: page
+lang: en
 title: About
 subtitle: Modern age with modern apps!
+permalink: /about/
 ---
 
 ## Who am I?

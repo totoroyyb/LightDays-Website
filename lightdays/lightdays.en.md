@@ -1,5 +1,6 @@
 ---
 layout: page
+lang: en
 title: LightDays
 subtitle: An elegant way to remember days!
 permalink: /lightdays/
