@@ -1,3 +1,4 @@
+{% assign lang = site.active_lang %}
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -8,15 +9,15 @@
         <span class="icon-bar"></span>
       </button>
       {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
+        <a class="navbar-brand navbar-brand-logo" href="{% if lang == site.default_lang %} {{site.url}} {% else %} {{site.url}}/{{ lang }} {% endif %}"><img src="{{ site.title-img }}"/></a>
       {% else %}
-        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+        <a class="navbar-brand" href="{% if lang == site.default_lang %} {{site.url}} {% else %} {{site.url}}/{{ lang }} {% endif %}">{{ site.title }}</a>
       {% endif %}
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
+      {% for link in site.navbar-links[lang] %}
         {% if link[1].first %}
           <li class="navlinks-container">
             <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
@@ -40,7 +41,7 @@
 	{% if page.image and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="{{ site.url }}">
+	    <a href="{% if lang == site.default_lang %} {{site.url}} {% else %} {{site.url}}/{{ lang }} {% endif %}">
 	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
 		</a>
 	  </div>
@@ -48,7 +49,7 @@
 	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
 	<div class="avatar-container">
 	  <div class="avatar-img-border">
-	    <a href="{{ site.url }} ">
+	    <a href="{% if lang == site.default_lang %} {{site.url}} {% else %} {{site.url}}/{{ lang }} {% endif %}">
 	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
 		</a>
 	  </div>
