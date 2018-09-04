@@ -2,7 +2,7 @@
 
 languages: ["en", "zh"]
 default_lang: "en"
-exclude_from_localizations: ["javascript", "images", "css"]
+exclude_from_localization: ["js", "img", "css", "pic", "assets"]
 parallel_localization: true
 
 # url is the full website URL
