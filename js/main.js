@@ -6,6 +6,14 @@ var main = {
   numImgs : null,
 
   init : function() {
+    var language = navigator.language || navigator.browserLanguage;
+    
+    if (language.indexOf('zh') > -1) {
+    document.location.href = 'https://dexstudio.cn/zh';
+    } else {
+    document.location.href = 'https://dexstudio.cn';
+    }
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
