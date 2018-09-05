@@ -16,6 +16,18 @@ langfull:
   en: "English"
   zh: "简体中文"
 
+posttext:
+  en: "Posted on"
+  zh: "发布于"
+
+tagstext:
+  en: "Tags:"
+  zh: "标签:"
+
+subtitle:
+  en: "Design, Efficiency and Experience"
+  zh: "设计 效率 体验"
+
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
