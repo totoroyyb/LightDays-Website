@@ -139,10 +139,15 @@ var main = {
 
 document.addEventListener('DOMContentLoaded', main.init);
 
-var language = navigator.language || navigator.browserLanguage;
+window.onload = function () {
+  if (localStorage.getItem("hasCodeRunBefore") === null) {
+    var language = navigator.language || navigator.browserLanguage;
 
-if (language.indexOf('zh') > -1) {
-  document.location.href = 'https://dexstudio.cn/zh';
-} else {
-  document.location.href = 'https://dexstudio.cn';
+    if (language.indexOf('zh') > -1) {
+      document.location.href = 'https://dexstudio.cn/zh';
+    } else {
+      document.location.href = 'https://dexstudio.cn';
+    }
+    localStorage.setItem("hasCodeRunBefore", true);
+  }
 }
