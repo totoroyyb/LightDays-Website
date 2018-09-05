@@ -139,7 +139,7 @@ var main = {
 
 document.addEventListener('DOMContentLoaded', main.init);
 
-window.onload = function () {
+window.DOMContentLoaded = function () {
   if (localStorage.getItem("hasCodeRunBefore") === null) {
     var language = navigator.language || navigator.browserLanguage;
 
