@@ -8,6 +8,16 @@ use-site-title: true
 <html lang="en">
 <head>
   <meta charset="utf-8">
+
+  <script type="type/javascript">
+    var language = navigator.language || navigator.browserLanguage;
+    
+    if (language.indexOf('zh') > -1) {
+    document.location.href = 'https://dexstudio.cn/zh';
+    } else {
+    document.location.href = 'https://dexstudio.cn';
+    }
+    </script>
 </head>
 
 <body>
