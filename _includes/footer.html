@@ -39,8 +39,9 @@
         {{ site.time | date: '%Y' }}
   
         {% if site.url-pretty %}
+        {% assign lang = site.active_lang %}
         &nbsp;&bull;&nbsp;
-        <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+        <a href="{% if lang == site.default_lang %} {{site.url}} {% else %} {{site.url}}/{{ lang }} {% endif %}">{{ site.url-pretty }}</a>
         {% endif %}
   
         {% if site.matomo %}
