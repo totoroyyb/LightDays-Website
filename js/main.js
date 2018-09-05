@@ -6,6 +6,16 @@ var main = {
   numImgs: null,
 
   init: function () {
+    var language = navigator.language || navigator.browserLanguage;
+    if (sessionStorage.getItem("hasCodeRunBefore") === null) {
+      if (language.indexOf('zh') > -1) {
+        document.location.href = 'https://dexstudio.cn/zh';
+      } else {
+        document.location.href = 'https://dexstudio.cn';
+      }
+      sessionStorage.setItem("hasCodeRunBefore", true);
+    }
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function () {
       if ($(".navbar").offset().top > 50) {
@@ -136,17 +146,5 @@ var main = {
 };
 
 // 2fc73a3a967e97599c9763d05e564189
-
-window.onload = function () {
-  var language = navigator.language || navigator.browserLanguage;
-  if (sessionStorage.getItem("hasCodeRunBefore") === null) {
-    if (language.indexOf('zh') > -1) {
-      document.location.href = 'https://dexstudio.cn/zh';
-    } else {
-      document.location.href = 'https://dexstudio.cn';
-    }
-    sessionStorage.setItem("hasCodeRunBefore", true);
-  }
-}
 
 document.addEventListener('DOMContentLoaded', main.init);
