@@ -9,9 +9,9 @@ var main = {
     var language = navigator.language || navigator.browserLanguage;
     if (sessionStorage.getItem("hasCodeRunBefore") === null) {
       if (language.indexOf('zh') > -1) {
-        document.location.href = 'https://dexstudio.cn/zh';
+        document.location.href = "https://" + window.location.host + "/zh/" + window.location.pathname + window.location.search;
       } else {
-        document.location.href = 'https://dexstudio.cn';
+        document.location.href = "https://" + window.location.host + "/" + window.location.pathname + window.location.search;
       }
       sessionStorage.setItem("hasCodeRunBefore", true);
     }
